@@ -50,6 +50,9 @@
                                 </a>
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="{{ route('home') }}" class="dropdown-item">Dashboard</a>
+                                    <a href="{{ route('reports.index') }}" class="dropdown-item">My Reports</a>
+
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -67,7 +70,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 container">
             @yield('content')
         </main>
     </div>
